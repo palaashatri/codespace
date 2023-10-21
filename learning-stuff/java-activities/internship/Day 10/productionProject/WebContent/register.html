@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration</title>
+<style>
+.reg{
+text-align:center;
+}
+</style>
+
+<script>
+function emailValidation() {
+    inputText = document.getElementById('email');
+    var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    if (inputText.value.match(mailformat)) {
+        document.getElementById('eV').innerHTML="Valid email";
+        document.getElementById('eV').style.color="green";
+        document.getElementById('email').style.background = "green";
+        document.getElementById('eV').style.margin= "10px";
+        return true;
+    }
+    else {
+        document.getElementById('eV').innerHTML = " Invalid email";
+        document.getElementById('eV').style.color="red";
+        document.getElementById('email').style.background = "crimson";     
+        document.getElementById('eV').style.margin= "10px";
+        return false;
+    }
+}
+</script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class = "reg">
+<h3>Sign Up</h3>
+	<form action="./InsertMemberController" method="post"> 
+		<label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="pass">Password:</label>
+        <input type="password" id="pass" name="pass"></input><br><br>
+        <label for="email">Email:</label>
+        <input type="text" onfocus="this.value=''" onblur="emailValidation()" id="email" name="email"><br><span id="eV" style="font-size: small;"></span><br><br>
+        <label for="loc">Location:</label>
+        <input type="text" id="loc" name="loc"><br><br>
+        <input type="submit" value="Sign Up">
+    </form>
+</div>
+
+</body>
+</html>

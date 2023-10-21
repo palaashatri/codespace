@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert Movie</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</head>
+<body>
+<a href="dashboard.html">Home</a>
+<h2> Add a new Movie</h2><br>
+<form action="./InsertMovieController" method="post">
+Movie Id: <input type="number" name="mid"><br><br>
+Movie Name: <input type="text" name="mname"><br><br>
+Hero Name: <input type="text" name="heroname"><br><br>
+Heroine: <input type="text" name="heroine"><br><br>
+Release Date: <input type="date" name="releasedate"><br><br>
+Language: <input type="text" name="language"><br><br>
+Length: <input type="number" name="length"><br><br>
+Movie Type: <input type="text" name="movietype"><br><br>
+Production Id: <input type="number" name="pid"><br><br>
+<input type="submit" value="Insert Movie"><br><br>
+</form>
+</body>
+</html>

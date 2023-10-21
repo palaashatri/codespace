@@ -1,0 +1,4 @@
+TKinter based Python Text Editor.
+Notepad, just built in Python 3 + TK, in layman terms.
+
+Usage: python3 app.py

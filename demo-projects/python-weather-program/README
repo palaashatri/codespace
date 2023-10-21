@@ -1,0 +1,6 @@
+This Python program gets the current weather forecast for a city from OpenWeatherMap.
+The city name is passed as a command-line argument.
+
+The program prints the current temperature, pressure, humidity, and weather description.
+
+Usage: python app.py <city_name>

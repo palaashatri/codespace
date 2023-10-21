@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<style>
+.title{
+	font-size:22px;
+	text-align:center;
+	padding:100px;
+}
+.wrap-login100{
+	text-align:center;
+}
+    </style>
+    
+<title>Login</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="wrap-login100">  
+<span class="title">
+Member Login
+</span><br><br>
+	<form action="./CheckMemberController" method="post">  
+         
+            <label>Username : </label>   
+            <input type="text" placeholder="Enter Email" name="email" required> <br><br> 
+            <label>Password : </label>   
+            <input type="password" placeholder="Enter Password" name="password" required> <br><br> 
+            <button type="submit">Login</button>   <br><br>
+    </form> 
+  
+    <a href="register.html"><button>Sign Up</button></a>
+
+</div>   
+    
+</body>
+</html>

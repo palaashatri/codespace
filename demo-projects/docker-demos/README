@@ -1,0 +1,6 @@
+docker-demos 
+
+* docker-flask : a simple flask application containerised in docker
+* docker-node : a simple node.js application containerised in docker
+* docker-spring : a simple java spring-boot application containerised in docker
+* docker-node-mongo : a simple node.js application with a mongodb database for db connectivity, coupled with a mongo-express server containerised in a docker-compose network
