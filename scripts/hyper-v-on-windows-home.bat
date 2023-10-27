@@ -1,5 +1,5 @@
 @REM Simple batch script to download and install Hyper-V manager on devices running Windows 10/11 Home, 
-@REM so that you can run both Docker and a full-fledged, hardware-accelerated, virtualized OS alongwith Windows on this Type-0 hypervisor
+@REM so that you can run both Docker and a full-fledged, hardware-accelerated, virtualized OS alongwith Windows on this Type-1 hypervisor
 
 @REM How to run?
 @REM Open a conhost as administrator (in PowerShell, use "Start-Process cmd.exe -Verb runAs"), and then 
