@@ -124,5 +124,6 @@ public class Main {
         convertPoundsToKilograms(200);
         convertKilogramsToPounds(90);
         printQuestionMarkChar();
+        diffLossyConversion();
     }
 }
