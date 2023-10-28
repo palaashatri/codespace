@@ -14,6 +14,8 @@ public class Main {
 
         // short 
         short s = 127;
+        // or
+        short s2 = (short) 127;
         System.out.println("Size of short is : " + Short.SIZE);
         System.out.println("Short goes from " + Short.MIN_VALUE + " to " + Short.MAX_VALUE);
         System.out.println("Value of s is : " + s);
@@ -26,12 +28,16 @@ public class Main {
 
         // long -> use L suffix for specifying long integers, like 10L for example.
         long l = 127L;
+        // or
+        long l2 = (long) 127;
         System.out.println("Size of long is : " + Long.SIZE);
         System.out.println("Long goes from " + Long.MIN_VALUE + " to " + Long.MAX_VALUE);
         System.out.println("Value of l is : " + l);
 
         // float -> Use suffix F for specifying float decimal numbers
         float f = 127.27F;
+        // or
+        float f2 = (float) 127.27;
         System.out.println("Size of float is : " + Float.SIZE);
         System.out.println("Float goes from " + Float.MIN_VALUE + " to " + Float.MAX_VALUE);
         System.out.println("Value of f is : " + f);
