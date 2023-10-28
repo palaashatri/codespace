@@ -31,13 +31,13 @@ public class Main {
         System.out.println("Value of l is : " + l);
 
         // float -> Use suffix F for specifying float decimal numbers
-        float f = 127F;
+        float f = 127.27F;
         System.out.println("Size of float is : " + Float.SIZE);
         System.out.println("Float goes from " + Float.MIN_VALUE + " to " + Float.MAX_VALUE);
         System.out.println("Value of f is : " + f);
 
         // double -> Use suffix D for specifying double decimal numbers (optional), default data type for decimal numbers in Java
-        double d = 127;
+        double d = 127.27;
         System.out.println("Size of double is : " + Double.SIZE);
         System.out.println("Double goes from " + Double.MIN_VALUE + " to " + Double.MAX_VALUE);
         System.out.println("Value of d is : " + d);
