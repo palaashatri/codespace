@@ -93,6 +93,24 @@ public class Main {
         System.out.println("My Values are : " + mySimpleChar + myUnicodeChar + myDecimalChar);
     }
 
+    private static void diffLossyConversion(){
+        int result = 10;
+        result -= 5.5;
+        System.out.println(result); // -> 4 (lossy)
+
+        // similar to
+        int result2 = 10;
+        result2  = (int) (result2 - 5.5);
+        System.out.println(result2); // -> 4 (lossy)
+ 
+        // This proves that, compound assignment operator :
+        // x -= y
+        // is actually
+        // x = (datatype of x) (x - y)
+        // and not
+        // x = x - y
+    }
+
     public static void main(String[] args) {
         
         logger.info("Hello World!");
