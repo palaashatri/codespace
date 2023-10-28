@@ -109,6 +109,12 @@ public class Main {
         // x = (datatype of x) (x - y)
         // and not
         // x = x - y
+
+        // what we should do instead :
+
+        double result3 = 10;
+        result3 -= 5.5;
+        System.out.println(result3); // -> 4.5 (lossless)
     }
 
     public static void main(String[] args) {
