@@ -4,6 +4,10 @@ import java.util.logging.Logger;
 
 public class Main {
     static Logger logger = Logger.getLogger("MyLogger");
+
+    /**
+     * Method to print details about primitive data types in Java
+     */
     private static void primitiveDataTypes(){
 
         // byte
@@ -58,9 +62,31 @@ public class Main {
         System.out.println("Boolean has two values : " + Boolean.TRUE + " and " + Boolean.FALSE);
 
     }
+
+    /**
+     * Method to convert Pounds to Kilograms
+     * @param weightInPound : weight in pounds
+     */
+    private static void convertPoundsToKilograms(double weightInPound){
+        double weightInKilograms = weightInPound * 0.45359237;
+        System.out.println("Weight in kilograms is : " + weightInKilograms);
+    }
+
+    /**
+     * Method to convert Kilograms to Pounds
+     * @param weightInKilograms : weight in kilograms
+     */
+    private static void convertKilogramsToPounds(double weightInKilograms){
+        double weightInPounds = weightInKilograms * 2.20462262185;
+        System.out.println("Weight in pounds is : " + weightInPounds);
+    
+    }
+
     public static void main(String[] args) {
         
         logger.info("Hello World!");
         primitiveDataTypes();
+        convertPoundsToKilograms(200);
+        convertKilogramsToPounds(90);
     }
 }
